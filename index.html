@@ -13,12 +13,14 @@
                 <h1 id="domain">example.com</h1>
             </div>
             <div class="off-localhost">
-                <p>Contact: domains@veladevelopment.com</p>
+                <p id="email"></p>
             </div>
         </div>
         <script>
+            const a = ['domains','@','veladevelopment','.','com'];
             document.getElementById("domain").innerHTML = window.location.hostname;
             document.title = window.location.hostname;
+            document.getElementById("email").innerHTML = a.join('');
         </script>
     </body>
 </html>
