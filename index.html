@@ -20,7 +20,7 @@
             const a = ['domains','@','veladevelopment','.','com'];
             document.getElementById("domain").innerHTML = window.location.hostname;
             document.title = window.location.hostname;
-            document.getElementById("email").innerHTML = 'Contact: ' + a.join('');
+            document.getElementById("email").innerHTML = 'Contact: <a href="mailto:' + a.join('') + '?subject=' + encodeURI(window.location.hostname) + '">' + a.join('') + '</a>'
         </script>
     </body>
 </html>
