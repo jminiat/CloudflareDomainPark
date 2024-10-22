@@ -20,3 +20,7 @@ If you have not already, Cloudflare also recommends that you add an A, AAAA, or 
 | Type  | Name | Content | TTL  |
 | ------| ---- | ------- | ---- |
 | CNAME | www  | @       | Auto |
+
+# Add your Cloudflare Domain to your Cloudflare Pages Custom domains:
+
+Cloudflare will not serve your custom page on the new domain without adding it to the list of custom domains for the page as outlined here: https://developers.cloudflare.com/pages/how-to/redirect-to-custom-domain/#setup
